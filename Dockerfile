@@ -5,6 +5,7 @@ RUN apt-get update && apt-get -y install wget git php7.0 php7.0-mysql php7.0-sql
 
 RUN [ ! -f "composer.phar" ] && wget https://getcomposer.org/composer.phar
 RUN mv composer.phar /usr/local/bin/composer
+RUN /bin/chmod +x /usr/local/bin/composer
 RUN /bin/mkdir /tmp/code
 
 WORKDIR /tmp/code
