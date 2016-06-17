@@ -7,6 +7,7 @@ RUN [ ! -f "composer.phar" ] && wget https://getcomposer.org/composer.phar
 RUN mv composer.phar /usr/local/bin/composer
 RUN /bin/chmod +x /usr/local/bin/composer
 RUN /bin/mkdir /tmp/code
+EXPOSE 8008
 
 WORKDIR /tmp/code
 
