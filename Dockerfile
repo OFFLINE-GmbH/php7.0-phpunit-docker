@@ -20,6 +20,7 @@ RUN apk add --no-cache \
         libmemcached-dev \
         libmcrypt-dev \
         libxml2-dev     \
+        openssh-client     \
     && rm -rf /var/cache/apk/*
 
 RUN apk add --no-cache \
